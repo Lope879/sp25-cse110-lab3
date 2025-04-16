@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Minutes</title>
+    <link rel="icon" type="image" href="clockImage2.jpeg">
+</head>
+<body>
+    <header> 
+        <h1>Meeting Minutes CSE110</h1> 
+        <hr>
+    </header>
+    <main> 
+        <nav class="menu">
+            <ul>
+              <li><a href="#comments">Comments</a></li>
+              <li><a href="#agenda">Meeting Agenda</a></li>
+              <li><a href="#new_business">New Business To Discuss</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h3>Meeting Date</h3>
+            <p>4/12/2025</p>
+        </section>
+        <section>
+            <h2 id="objective">Meeting Objective</h2>
+            <p>The objective of this meeting is <b>brainstorming</b>.</p>  <!--#use ol and li -->
+        </section>
+        <section>
+            <h2 id="attendance">Meeting Attendance</h2>
+            <ol>
+                <li>Mario Bros</li>
+                <li>Luigi Bros</li>
+                <li>Bowser</li>
+                <li>Mike Tyson</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Unfinished Business from Last Meeting</h2>
+            <ul>
+                <li>Member Introductions</li>
+                <li>Ice Breaker Ideas</li>
+            </ul>
+        </section>
+        <section> 
+            <h2 id="agenda">Meeting Agenda</h2>
+            <details open>
+                <summary>Finish Unfinished Business</summary>
+                <p>
+                    Complete the business mentioned above.
+                </p>
+            </details>
+            <details open>
+                <summary>Team Brand</summary>
+                <p>
+                    We will discuss what name we will call our <span>team</span>, the logo, and our values that we all agree on.
+                </p>
+            </details>
+            <details open>
+                <summary>Warm Up Assignment Ideas</summary>
+                <p>
+                    We will discuss possible options of games which the team will focus on developing and 
+                    creating a UI <strong>which should be done before the deadline coming up!</strong>
+                </p>
+            </details>
+        </section>
+        <div>
+            <h2 id="comments">Comments Section</h2>
+            <p>
+                In the meeting we determined that to improve the team atmosphere we will address <i>psychological safety</i> and we will 
+                <em>not</em> bring each other down when a mistake is done.
+                <br>
+                Below you will find a video and audio of the meeting.
+            </p>
+            <img src="whiteboardImage.jpg" alt="whiteboard picture" width="200" height="200">
+        </div>
+        <audio controls src="audioOfMeeting110.mp3"> </audio>
+        <video controls src="videoOfMeeting.mp4"></video>
+    </main>
+    <hr>
+    
+    <br>
+    <br>
+    <br>
+    <form action="" method="get">
+        <label for="">
+            Name:
+            <input type="text">
+        </label>
+    </form>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Do you agree to the terms?</legend>
+            <label><input type="radio" name="radio" value="yes" /> Yes</label>
+        </fieldset>
+    </form>
+    <textarea name="" id="">
+        This is a test. Place with text.
+    </textarea>
+    <label for="myColors">Choose a color from this list:</label>
+    <input list="colors" id="myColors">
+    <datalist id="colors">
+        <option value="green"></option>
+        <option value="red"></option>
+        <option value="blue"></option>
+    </datalist>
+    <button>Click here for dopamine!</button>
+    
+    <label for="numbers">Here select a number:</label>
+    <select name="chooseNumber" id="numbers">
+        <option value="one">One</option>
+        <option value="two">Two</option>
+        <option value="three">Three</option>
+    </select>
+    
+    <br>
+    <br>
+    <br>
+
+    <footer> 
+        <h3 id="new_business">New Business to Discuss Next Meeting</h3> 
+        <ul>
+            <li>Project Ideas</li>
+            <li>Team Organization</li>
+        </ul>
+    </footer>
+</body>
+</html>
