@@ -132,15 +132,15 @@ li {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     padding-right: 1.1em;
-    color: color(display-p3 11 1 0.3);
+    color: color(display-p3 0.5 0.2 0.1);
     margin: auto;
     text-decoration:overline;
-    max-width: mm;
+    max-width: 50mm;
 }
 
 /* Heigh Seizing and Wider-gamut color */
 summary {
-    color: color-mix(in srgb, #6714B7 60.2%, #12E666 80.9%);
+    color: color-mix(in srgb, #6714B7, #12E666);
     margin: 3%;
     height: 5px;
 }
