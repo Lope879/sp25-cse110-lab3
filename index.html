@@ -5,22 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meeting Minutes</title>
     <link rel="icon" href="clockImage2.jpeg" />
+    <link rel="stylesheet" href="stylin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap" rel="stylesheet">
+    <style>
+        /* Universal Selector and Fonts */
+        * {
+            font-family: "Walter Turncoat", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
 </head>
 <body>
     <header> 
         <h1>Meeting Minutes CSE110</h1> 
+        <h2 class="one">by Professor Powell</h2>
         <hr>
     </header>
     <main> 
         <nav class="menu">
             <ul>
               <li><a href="#comments">Comments</a></li>
-              <li><a href="#agenda">Meeting Agenda</a></li>
-              <li><a href="#new_business">New Business To Discuss</a></li>
+            </ul>
+            <ul>
+                <li><a href="#agenda">Meeting Agenda</a></li>
+            </ul>
+            <ul>
+                <li><a href="#new_business">New Business To Discuss</a></li>
             </ul>
         </nav>
         <section>
-            <h3>Meeting Date</h3>
+            <h3 style="text-align: center;">Meeting Date</h3>
             <p>4/12/2025</p>
         </section>
         <section>
@@ -29,7 +46,7 @@
         </section>
         <section>
             <h2 id="attendance">Meeting Attendance</h2>
-            <ol>
+            <ol class="container">
                 <li>Mario Bros</li>
                 <li>Luigi Bros</li>
                 <li>Bowser</li>
@@ -38,7 +55,7 @@
         </section>
 
         <section>
-            <h2>Unfinished Business from Last Meeting</h2>
+            <h2 style="color:maroon">Unfinished Business from Last Meeting</h2>
             <ul>
                 <li>Member Introductions</li>
                 <li>Ice Breaker Ideas</li>
@@ -53,26 +70,27 @@
                 </p>
             </details>
             <details open>
-                <summary>Team Brand</summary>
+                <summary class="em">Team Brand</summary>
                 <p>
                     We will discuss what name we will call our <span>team</span>, the logo, and our values that we all agree on.
                 </p>
             </details>
             <details open>
-                <summary>Warm Up Assignment Ideas</summary>
+                <summary class="ideas">Warm Up Assignment Ideas</summary>
                 <p>
                     We will discuss possible options of games which the team will focus on developing and 
                     creating a UI <strong>which should be done before the deadline coming up!</strong>
                 </p>
             </details>
         </section>
-        <div>
+        <div class="a">
             <h2 id="comments">Comments Section</h2>
             <p>
                 In the meeting we determined that to improve the team atmosphere we will address <i>psychological safety</i> and we will 
                 <em>not</em> bring each other down when a mistake is done.
                 <br>
-                Below you will find a video and audio of the meeting.
+                <div>Below you will find a video and audio of the meeting.</div>
+                <div>If your screen is not big enough, audio will not show.</div>
             </p>
             <img src="whiteboardImage.jpg" alt="whiteboard picture" width="200" height="200">
         </div>
@@ -120,7 +138,7 @@
     <br>
 
     <footer> 
-        <h3 id="new_business">New Business to Discuss Next Meeting</h3> 
+        <h3 id="new_business" class="b">New Business to Discuss Next Meeting</h3> 
         <ul>
             <li>Project Ideas</li>
             <li>Team Organization</li>
