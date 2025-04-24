@@ -1,0 +1,189 @@
+:root {
+    --purple: #6443f9;
+    --ranColor: black;
+}
+
+/* Media Query */
+@media (width <= 1250px) {
+    audio {
+        display: none;
+    }
+}
+
+/* Nested Selector */
+button {
+    color: white;
+    background-color: blue;
+  
+    &:hover {
+      background-color: navy;
+    }
+}
+
+/* New selector :has */
+section:has(details) {
+  background-color: #f0f8ff; /* light blue */
+  border: 2px dashed teal;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* Inline-block Display */
+ul {
+    display: inline-block;
+}
+
+/* Attribute Selector and Text Color */
+a[href] {
+    background-color:chartreuse;
+}
+
+/* ID Selector */
+#objective {
+    color:blue;
+}
+
+/* Grid Layout */
+.container {
+    display: grid;
+    gap: 15px 10px;
+    grid-template-columns:max-content;
+    justify-items: stretch;
+}
+
+/* Class Selector and Flexbox Layout */
+.menu {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: column;
+}
+
+/* Width Sizing and Margin Longhand Syntax and Variable w/ Fallback */
+div {
+    color: var(--purple, pink);
+    font-size: 20px;
+    width: 30rem;
+    margin-left: 3%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 3%;
+    display: inline;
+}
+
+/* Max-width and Min-width Sizing and Margin Shorthand Syntax */
+p {
+    color: blue;
+    margin: 4% 14% 5% 8%;
+    min-width: 2px;
+    max-width: 40%;
+}
+
+/* Rgb Color and Background-color */
+h1 {
+    color: rgb(255,0,0);
+    background-color: var(--ranColor);
+}
+
+/* #Color and Text-align Border Longhand Syntax and Padding Shorthand Syntax */
+h2 {
+    color: #F0F;
+    font-size: 0.26in;
+    padding: 1% 3% 1% 2%;
+    border-style:double;
+    border-width: 0.2em;
+    border-color: green;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Hsl Color and Border Shorthand Syntax */
+h3 {
+    font-size: 6mm;
+    color: hsl(30,50%,50%);
+    border: 0.2em inset purple;
+    padding: 0.3em;
+}
+
+/* Combining Two Selectors and Text-decoration */
+summary.ideas {
+    text-decoration:underline dotted saddlebrown 1.5px;
+}
+
+/* Relative Position */
+video {
+    max-width: 500px;
+    position:relative; 
+    top: 10px;
+    left: 100px;
+}
+
+/* Static Position */
+audio {
+    position:static;
+    inset-inline-start: 20px;
+    inset-block-start: 20px;
+}
+
+/* Padding Longhand Syntax and Auto Margin and Wider-gamut color */
+li {
+    padding-left: 1.1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 1.1em;
+    color: color(display-p3 11 1 0.3);
+    margin: auto;
+    text-decoration:overline;
+    max-width: mm;
+}
+
+/* Heigh Seizing and Wider-gamut color */
+summary {
+    color: color-mix(in srgb, #6714B7 60.2%, #12E666 80.9%);
+    margin: 3%;
+    height: 5px;
+}
+
+/* Pseudo-class Selector */
+b:hover {
+    background-color: gold;
+}
+
+/* Selector List and Pseudo-class */
+#numbers, button:active {
+    box-shadow: 2px 2px 5px #fc894d;
+}
+
+/* Descendant Combinator */
+div.a h2 {
+    background-color: greenyellow;
+}
+
+/* Child Combinator */
+p > em {
+    border-radius: 3px;
+    font-size:xx-large;
+}
+
+/* Adjacent Sibling Combinator */
+nav + section {
+    background-color: bisque;
+}
+
+/* General Sibling Combinator */
+nav ~ section {
+    border-width: 2px;
+    border-style:solid;
+}
+
+/* Inline Display */
+.a {
+    display: inline;
+}
+
+.b {
+    display: inline-block;
+}
+
+/* comments */ 
